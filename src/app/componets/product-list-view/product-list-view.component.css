@@ -1,0 +1,28 @@
+
+.body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main{
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: rgb(28, 29, 29);
+    width: 90%;
+    height: fit-content;
+    place-self: center;
+    padding: 20px;
+}
+
+.flexible-list{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.flexible-list div{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: -10%;
+}

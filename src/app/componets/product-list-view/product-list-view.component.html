@@ -1,0 +1,7 @@
+<div class="body">
+    <div class="main">
+        <div class="flexible-list">
+            <div *ngFor="let p of products"><app-product-card name={{p.name}} category={{p.category}} brand={{p.brand}} price='{{p.price}}' sales={{p.sales}}/></div>
+        </div>
+    </div>
+</div>

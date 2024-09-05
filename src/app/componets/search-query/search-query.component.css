@@ -1,0 +1,56 @@
+.input-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    margin-bottom: 5px;
+}
+
+.input{
+    font-weight: 50;
+    font-size: large;
+    font-family: sans-serif;
+    justify-self: center;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-width: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 40px;
+}
+
+.search-button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.cancel-div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.cancel-button{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border-width: 0px;
+}
+
+.cancel-button:hover{
+    background-color: rgba(214, 214, 214, 0.521);
+}
+
+.cancel-button:active{
+    background-color: rgba(214, 214, 214, 0.849);
+}

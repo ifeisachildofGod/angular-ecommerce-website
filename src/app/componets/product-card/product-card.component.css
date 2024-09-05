@@ -1,0 +1,255 @@
+
+*{
+    --image-card-height: 150px;
+    --image-card-width: 300px;
+
+    --image-card-anim-border-width: 2px;
+
+    --image-height: 270px;
+    --image-increase-height: 210px;
+}
+
+button{
+    background-color: white;
+    color: black;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    cursor: default;
+}
+
+.main{
+    display: flexbox;
+    width: 480px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.image-div{
+    position: relative;
+    user-select: none;
+    -moz-user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0ms;
+    background-color: white;
+    width: var(--image-card-width);
+    height: var(--image-card-height);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.image-div:hover{
+    background-color: rgb(207, 207, 207);
+    border: var(--image-card-anim-border-width) solid black;
+    border-bottom: 0px solid black;
+    width: calc(var(--image-card-width) - (var(--image-card-anim-border-width) * 2));
+    height: calc(var(--image-card-height) - var(--image-card-anim-border-width));
+    cursor: pointer;
+}
+
+.image{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: 500ms;
+}
+
+.price-tag{
+    font-family: sans-serif;
+    background-color: #000000c5;
+    text-align: center;
+    color: white;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -2px;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-div{
+    display: flex;
+    width: calc(var(--image-card-width) - 20px);
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-left: 0px solid black;
+}
+
+.info-content-div{
+    display: flexbox;
+    height: 1;
+    width: 80%;
+}
+
+.main-info{
+    margin: 0px;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: sans-serif;
+    text-wrap: wrap;
+    margin-bottom: -10px;
+}
+.sub-info{
+    margin: 0px;
+    display: flex;
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+.sub-info p{
+    color: #2b2b2b;
+}
+
+.seperatory-dot-include{
+    margin-right: 20px;
+    position: relative;
+}
+
+.seperatory-dot-include::after{
+    color: #2b2b2b;
+    content: '.';
+    position: absolute;
+    top: -35%;
+    left: calc(100% + 10px);
+    font-weight: 900;
+}
+
+.product-logo-div{
+    padding-top: -13px;
+    padding-right: 10px;
+    display: flex;
+    height: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-logo-mask{
+    border: 2px solid black;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.product-logo-mask:hover{
+    cursor: pointer;
+}
+
+.product-logo-mask:active{
+    border: 2px solid black;
+    cursor: default;
+}
+
+.product-logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.options-div{
+    padding-top: 5px;
+    position: relative;
+}
+
+.options-image-div{
+    user-select: none;
+    -moz-user-select: none;
+    display: block;
+    width: 10px;
+    height: fit-content;
+}
+
+.options-image-div p{
+    display: flex;
+    user-select: none;
+    -moz-user-select: none;
+    padding: 0px;
+    margin: -16px;
+    font-size: 20px;
+    font-weight: 800;
+    justify-content: center;
+}
+
+.options-image-div:hover{
+    cursor: pointer;
+}
+
+.options-image-div:active{
+    cursor: default;
+}
+
+.options{
+    visibility: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 1;
+    left: calc(100% + 10px);
+    user-select: none;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    width: 100px;
+    height: fit-content;
+    background-color: white;
+}
+.options button{
+    width: 100%;
+    height: 36px;
+    border: none;
+}
+.options button:hover{
+    background-color: #00000085;
+    color: black;
+}
+
+
+
+.add-to-cart-button-div{
+    display: grid;
+    width: var(--image-card-width)
+}
+
+.add-to-cart-button{
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    place-content: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+    transition: 200ms;
+}
+
+
+.add-to-cart-button:active{
+    font-size: 14px;
+    width: 98%;
+    height: 28px;
+    transform: translate(2px, 2px);
+}
+

@@ -1,0 +1,59 @@
+.main-div{
+    display: flex;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.logo-options-div{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    align-items: center;
+}
+
+.header-option{
+    user-select: none;
+    -moz-user-select: none;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    margin-left: calc(100%/6);
+    place-self: center;
+    text-decoration: none;
+}
+
+.header-option:hover{
+    color: rgb(164, 182, 241);
+    cursor: pointer;
+}
+
+.header-option:active{
+    color: black;
+    cursor: default;
+}
+
+.icon{
+    height: 20px;
+    place-self: center;
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+.icon:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.icon:active{
+    cursor: default;
+    opacity: 0.3;
+}
+
+.icons-div{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+
