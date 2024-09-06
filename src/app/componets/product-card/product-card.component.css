@@ -46,8 +46,8 @@ button:active{
     background-color: white;
     width: var(--image-card-width);
     height: var(--image-card-height);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .image-div:hover{
@@ -99,12 +99,15 @@ button:active{
     background-color: white;
     border: 2px solid black;
     border-left: 0px solid black;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .info-content-div{
     display: flexbox;
     height: 1;
-    width: 80%;
+    width: 79%;
 }
 
 .main-info{
@@ -114,6 +117,9 @@ button:active{
     font-family: sans-serif;
     text-wrap: wrap;
     margin-bottom: -10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .sub-info{
     margin: 0px;
@@ -204,11 +210,10 @@ button:active{
 }
 
 .options{
-    visibility: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
-    bottom: 1;
-    left: calc(100% + 10px);
+    top: 30px;
+    left: calc(100% - 20px);
     user-select: none;
     border-radius: 5px;
     overflow: hidden;
@@ -229,27 +234,4 @@ button:active{
 
 
 
-.add-to-cart-button-div{
-    display: grid;
-    width: var(--image-card-width)
-}
-
-.add-to-cart-button{
-    font-size: 15px;
-    font-family: sans-serif;
-    text-align: center;
-    place-content: center;
-    border: 1px solid black;
-    width: 100%;
-    height: 30px;
-    transition: 200ms;
-}
-
-
-.add-to-cart-button:active{
-    font-size: 14px;
-    width: 98%;
-    height: 28px;
-    transform: translate(2px, 2px);
-}
 

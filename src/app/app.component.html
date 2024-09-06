@@ -1,14 +1,8 @@
-<header>
-    <app-header (pageStateController)="pageStateManager.setState($event, true)"/>
-</header>
-<body>
-    <app-home *ngIf="pageStateManager.getState('home')" ></app-home>
-    <app-about *ngIf="pageStateManager.getState('about')"></app-about>
-    <app-support *ngIf="pageStateManager.getState('support')"></app-support>
-</body>
-<footer>
-    <app-footer/>
-</footer>
+<app-header (pageStateController)="pageStateManager.setState($event, true)"/>
+<app-home *ngIf="pageStateManager.getState('home')" ></app-home>
+<app-about *ngIf="pageStateManager.getState('about')"></app-about>
+<app-support *ngIf="pageStateManager.getState('support')"></app-support>
+<app-footer/>
 
 
 

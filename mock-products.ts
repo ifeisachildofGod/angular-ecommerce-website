@@ -73,4 +73,12 @@ export const PRODUCTS: Product[] = [
         price: 10,
         sales: 0,
     },
+    {
+        id: 9,
+        name: "Zaa Cribo",
+        brand: 'The hood',
+        category: 'Drugs',
+        price: 0,
+        sales: 10
+    }
 ]

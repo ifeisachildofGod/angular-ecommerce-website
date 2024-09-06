@@ -1,11 +1,19 @@
-<div class="input-div">
-    <div class="input-div">
-        <input type="text" placeholder="Search" class="input">
+<div #s class="main">
+    <div #searchings class="input-div">
+        <input type="text" placeholder="Search" class="input" id="input" #box (keyup)="querySearch(box.value)">
+        
         <div class="cancel-div">
-            <button class="cancel-button">
-                <img src="icons/cancel-icon.png" height="22px" alt="cancel icon">
+            <button class="cancel-button" (click)="searching = false" >
+                <img src="icons/cancel-icon.png" height="22px" alt="cancel icon" >
             </button>
         </div>
+        
         <button class="search-button"><img src="icons/search-icon.png" alt="search icon"></button>
+    </div>
+    <div class="suggested-options" *ngIf="searching">
+        <button>Hello</button>
+        <button>Hello</button>
+        <button>Hello</button>
+        <button>Hello</button>
     </div>
 </div>

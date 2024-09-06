@@ -4,31 +4,67 @@
     width: 100%;
     background-color: white;
     margin-top: 40px;
+    padding: 3px;
 }
-
-.main-div{
-    display: flex;
-    margin: 0;
-    height: 40px;
+.main *{
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.logo-options-div{
-    display: flex;
+.main div{
     width: 100%;
-    background-color: white;
-    margin: 0;
+    user-select: none;
+}
+
+.company-copy{
+    font-family: sans-serif;
+    font-size: large;
+    user-select: none;
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.header-option{
-    color: rgb(0, 0, 0);
-    margin-left: calc(100%/6);
-    place-self: center;
-    text-decoration: none;
+.logo-div img{
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 60%;
 }
 
-.header-option:hover{
-    color: rgb(164, 182, 241);
+.socials-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.socials-div img{
+    width: auto;
+    height: auto;
+    max-width: 30%;
+    max-height: 30%;
 
+    margin-left: 0px;
+    margin-right: 20px;
+    user-select: none;
+}
+
+.socials-div img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.socials-div img:active{
+    cursor: default;
+    opacity: 1;
+}

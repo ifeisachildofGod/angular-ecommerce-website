@@ -17,8 +17,7 @@ import { StateManager } from './PageStateManager';
   imports:
    [RouterOutlet, HeaderComponent,
     FooterComponent, HomeComponent,
-    CommonModule, SupportComponent,
-    AboutComponent],
+    CommonModule, SupportComponent, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
